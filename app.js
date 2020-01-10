@@ -38,9 +38,39 @@ function datos(array) {
 
 }
 
-const valor = datos(arreglo2);
+const valor = datos(arreglo);
 
-console.log(valor);
+//console.log(valor);
+
+// inversa de objeto a array //
+
+let nuevoArreglo = [];
+
+function datos2(objeto) {
+
+    for (const obj in objeto) {
+
+        nuevoArreglo.push([obj, objeto[obj]]);
+
+    }
+
+    return nuevoArreglo;
+}
+
+const valor2 = datos2(valor);
+
+console.log(valor2);
+
+
+
+
+
+
+
+
+
+
+
 
 
 
